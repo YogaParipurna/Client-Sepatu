@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ServiceSepatu" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServiceSepatu" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfTambahBahann">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TambahBahann" nillable="true" type="tns:TambahBahann" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTambahBahann" nillable="true" type="tns:ArrayOfTambahBahann" />
+  <xs:complexType name="TambahBahann">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID_Bahan" type="xs:int" />
+      <xs:element minOccurs="0" name="Jenis_Bahan" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahBahann" nillable="true" type="tns:TambahBahann" />
+  <xs:complexType name="ArrayOfTambahJenis">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TambahJenis" nillable="true" type="tns:TambahJenis" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTambahJenis" nillable="true" type="tns:ArrayOfTambahJenis" />
+  <xs:complexType name="TambahJenis">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID_Jenis" type="xs:int" />
+      <xs:element minOccurs="0" name="Nama_Jenis" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahJenis" nillable="true" type="tns:TambahJenis" />
+  <xs:complexType name="ArrayOfTambahMerek">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TambahMerek" nillable="true" type="tns:TambahMerek" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTambahMerek" nillable="true" type="tns:ArrayOfTambahMerek" />
+  <xs:complexType name="TambahMerek">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID_Merek" type="xs:int" />
+      <xs:element minOccurs="0" name="Nama_Merek" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahMerek" nillable="true" type="tns:TambahMerek" />
+  <xs:complexType name="ArrayOfTambahNota">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TambahNota" nillable="true" type="tns:TambahNota" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTambahNota" nillable="true" type="tns:ArrayOfTambahNota" />
+  <xs:complexType name="TambahNota">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bulan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_Nota" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Jumlah" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tahun" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tanggal" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahNota" nillable="true" type="tns:TambahNota" />
+  <xs:complexType name="ArrayOfTambahUkuran">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TambahUkuran" nillable="true" type="tns:TambahUkuran" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTambahUkuran" nillable="true" type="tns:ArrayOfTambahUkuran" />
+  <xs:complexType name="TambahUkuran">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID_Ukuran" type="xs:int" />
+      <xs:element minOccurs="0" name="Ukuran" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahUkuran" nillable="true" type="tns:TambahUkuran" />
+  <xs:complexType name="ArrayOfTambahWarna">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TambahWarna" nillable="true" type="tns:TambahWarna" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTambahWarna" nillable="true" type="tns:ArrayOfTambahWarna" />
+  <xs:complexType name="TambahWarna">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID_Warna" type="xs:int" />
+      <xs:element minOccurs="0" name="Warna" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahWarna" nillable="true" type="tns:TambahWarna" />
+</xs:schema>

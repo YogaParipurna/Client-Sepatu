@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Sepatu" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ServiceSepatu" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISepatu_TambahBahan_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahBahan" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_TambahBahan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahBahanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_TambahJeniss_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahJeniss" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_TambahJeniss_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahJenissResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_TambahMerekk_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahMerekk" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_TambahMerekk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahMerekkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_TambahNotaa_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahNotaa" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_TambahNotaa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahNotaaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_TambahUkurann_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahUkurann" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_TambahUkurann_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahUkurannResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_TambahWarnaa_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahWarnaa" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_TambahWarnaa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahWarnaaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_editBahan_InputMessage">
+    <wsdl:part name="parameters" element="tns:editBahan" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_editBahan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editBahanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_editJenis_InputMessage">
+    <wsdl:part name="parameters" element="tns:editJenis" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_editJenis_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editJenisResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_editMerek_InputMessage">
+    <wsdl:part name="parameters" element="tns:editMerek" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_editMerek_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editMerekResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_editNota_InputMessage">
+    <wsdl:part name="parameters" element="tns:editNota" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_editNota_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editNotaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_editUkuran_InputMessage">
+    <wsdl:part name="parameters" element="tns:editUkuran" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_editUkuran_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editUkuranResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_editWarna_InputMessage">
+    <wsdl:part name="parameters" element="tns:editWarna" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_editWarna_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editWarnaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_deleteBahan_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteBahan" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_deleteBahan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteBahanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_deleteJenis_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteJenis" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_deleteJenis_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteJenisResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_deleteMerek_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteMerek" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_deleteMerek_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteMerekResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_deleteNota_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteNota" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_deleteNota_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteNotaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_deleteUkuran_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteUkuran" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_deleteUkuran_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteUkuranResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_deleteWarna_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteWarna" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_deleteWarna_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteWarnaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_ListBahan_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListBahan" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_ListBahan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListBahanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_ListJenis_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListJenis" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_ListJenis_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListJenisResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_ListMerek_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListMerek" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_ListMerek_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListMerekResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_ListNota_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListNota" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_ListNota_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListNotaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_ListUkuran_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListUkuran" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_ListUkuran_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListUkuranResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_ListWarna_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListWarna" />
+  </wsdl:message>
+  <wsdl:message name="ISepatu_ListWarna_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListWarnaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISepatu">
+    <wsdl:operation name="TambahBahan">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/TambahBahan" message="tns:ISepatu_TambahBahan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/TambahBahanResponse" message="tns:ISepatu_TambahBahan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahJeniss">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/TambahJeniss" message="tns:ISepatu_TambahJeniss_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/TambahJenissResponse" message="tns:ISepatu_TambahJeniss_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahMerekk">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/TambahMerekk" message="tns:ISepatu_TambahMerekk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/TambahMerekkResponse" message="tns:ISepatu_TambahMerekk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahNotaa">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/TambahNotaa" message="tns:ISepatu_TambahNotaa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/TambahNotaaResponse" message="tns:ISepatu_TambahNotaa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahUkurann">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/TambahUkurann" message="tns:ISepatu_TambahUkurann_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/TambahUkurannResponse" message="tns:ISepatu_TambahUkurann_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahWarnaa">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/TambahWarnaa" message="tns:ISepatu_TambahWarnaa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/TambahWarnaaResponse" message="tns:ISepatu_TambahWarnaa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editBahan">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/editBahan" message="tns:ISepatu_editBahan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/editBahanResponse" message="tns:ISepatu_editBahan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editJenis">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/editJenis" message="tns:ISepatu_editJenis_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/editJenisResponse" message="tns:ISepatu_editJenis_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editMerek">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/editMerek" message="tns:ISepatu_editMerek_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/editMerekResponse" message="tns:ISepatu_editMerek_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editNota">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/editNota" message="tns:ISepatu_editNota_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/editNotaResponse" message="tns:ISepatu_editNota_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editUkuran">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/editUkuran" message="tns:ISepatu_editUkuran_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/editUkuranResponse" message="tns:ISepatu_editUkuran_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editWarna">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/editWarna" message="tns:ISepatu_editWarna_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/editWarnaResponse" message="tns:ISepatu_editWarna_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteBahan">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/deleteBahan" message="tns:ISepatu_deleteBahan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/deleteBahanResponse" message="tns:ISepatu_deleteBahan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteJenis">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/deleteJenis" message="tns:ISepatu_deleteJenis_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/deleteJenisResponse" message="tns:ISepatu_deleteJenis_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteMerek">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/deleteMerek" message="tns:ISepatu_deleteMerek_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/deleteMerekResponse" message="tns:ISepatu_deleteMerek_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteNota">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/deleteNota" message="tns:ISepatu_deleteNota_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/deleteNotaResponse" message="tns:ISepatu_deleteNota_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteUkuran">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/deleteUkuran" message="tns:ISepatu_deleteUkuran_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/deleteUkuranResponse" message="tns:ISepatu_deleteUkuran_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteWarna">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/deleteWarna" message="tns:ISepatu_deleteWarna_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/deleteWarnaResponse" message="tns:ISepatu_deleteWarna_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListBahan">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/ListBahan" message="tns:ISepatu_ListBahan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/ListBahanResponse" message="tns:ISepatu_ListBahan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListJenis">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/ListJenis" message="tns:ISepatu_ListJenis_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/ListJenisResponse" message="tns:ISepatu_ListJenis_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListMerek">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/ListMerek" message="tns:ISepatu_ListMerek_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/ListMerekResponse" message="tns:ISepatu_ListMerek_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListNota">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/ListNota" message="tns:ISepatu_ListNota_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/ListNotaResponse" message="tns:ISepatu_ListNota_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListUkuran">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/ListUkuran" message="tns:ISepatu_ListUkuran_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/ListUkuranResponse" message="tns:ISepatu_ListUkuran_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListWarna">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISepatu/ListWarna" message="tns:ISepatu_ListWarna_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISepatu/ListWarnaResponse" message="tns:ISepatu_ListWarna_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EndpointService" type="tns:ISepatu">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TambahBahan">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/TambahBahan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahJeniss">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/TambahJeniss" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahMerekk">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/TambahMerekk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahNotaa">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/TambahNotaa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahUkurann">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/TambahUkurann" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahWarnaa">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/TambahWarnaa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editBahan">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/editBahan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editJenis">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/editJenis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editMerek">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/editMerek" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editNota">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/editNota" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editUkuran">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/editUkuran" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editWarna">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/editWarna" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteBahan">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/deleteBahan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteJenis">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/deleteJenis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteMerek">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/deleteMerek" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteNota">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/deleteNota" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUkuran">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/deleteUkuran" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteWarna">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/deleteWarna" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListBahan">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/ListBahan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListJenis">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/ListJenis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListMerek">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/ListMerek" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListNota">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/ListNota" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListUkuran">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/ListUkuran" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListWarna">
+      <soap:operation soapAction="http://tempuri.org/ISepatu/ListWarna" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Sepatu">
+    <wsdl:port name="EndpointService" binding="tns:EndpointService">
+      <soap:address location="http://localhost:1907/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

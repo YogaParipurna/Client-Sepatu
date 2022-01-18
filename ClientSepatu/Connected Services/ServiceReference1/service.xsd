@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/ServiceSepatu" />
+  <xs:element name="TambahBahan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Bahan" type="xs:int" />
+        <xs:element minOccurs="0" name="Jenis_Bahan" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TambahBahanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TambahBahanResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TambahJeniss">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Jenis" type="xs:int" />
+        <xs:element minOccurs="0" name="Nama_Jenis" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TambahJenissResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TambahJenissResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TambahMerekk">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Merek" type="xs:int" />
+        <xs:element minOccurs="0" name="Nama_Merek" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TambahMerekkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TambahMerekkResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TambahNotaa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Nota" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Tanggal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Bulan" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Tahun" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Jumlah" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TambahNotaaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TambahNotaaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TambahUkurann">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Ukuran" type="xs:int" />
+        <xs:element minOccurs="0" name="Ukuran" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TambahUkurannResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TambahUkurannResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TambahWarnaa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Warna" type="xs:int" />
+        <xs:element minOccurs="0" name="Warna" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TambahWarnaaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TambahWarnaaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editBahan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Bahan" type="xs:int" />
+        <xs:element minOccurs="0" name="Jenis_Bahan" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editBahanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="editBahanResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editJenis">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Jenis" type="xs:int" />
+        <xs:element minOccurs="0" name="Nama_Jenis" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editJenisResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="editJenisResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editMerek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Merek" type="xs:int" />
+        <xs:element minOccurs="0" name="Nama_Merek" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editMerekResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="editMerekResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editNota">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Nota" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Tanggal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Bulan" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Tahun" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Jumlah" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editNotaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="editNotaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editUkuran">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Ukuran" type="xs:int" />
+        <xs:element minOccurs="0" name="Ukuran" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editUkuranResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="editUkuranResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editWarna">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Warna" type="xs:int" />
+        <xs:element minOccurs="0" name="Warna" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editWarnaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="editWarnaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteBahan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Bahan" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteBahanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deleteBahanResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteJenis">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Jenis" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteJenisResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deleteJenisResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteMerek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Merek" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteMerekResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deleteMerekResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteNota">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Nota" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteNotaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deleteNotaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteUkuran">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Ukuran" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteUkuranResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deleteUkuranResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteWarna">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Warna" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteWarnaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deleteWarnaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListBahan">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListBahanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ServiceSepatu" minOccurs="0" name="ListBahanResult" nillable="true" type="q1:ArrayOfTambahBahann" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListJenis">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListJenisResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ServiceSepatu" minOccurs="0" name="ListJenisResult" nillable="true" type="q2:ArrayOfTambahJenis" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListMerek">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListMerekResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ServiceSepatu" minOccurs="0" name="ListMerekResult" nillable="true" type="q3:ArrayOfTambahMerek" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListNota">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListNotaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ServiceSepatu" minOccurs="0" name="ListNotaResult" nillable="true" type="q4:ArrayOfTambahNota" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListUkuran">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListUkuranResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ServiceSepatu" minOccurs="0" name="ListUkuranResult" nillable="true" type="q5:ArrayOfTambahUkuran" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListWarna">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListWarnaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/ServiceSepatu" minOccurs="0" name="ListWarnaResult" nillable="true" type="q6:ArrayOfTambahWarna" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
